@@ -1,4 +1,4 @@
-// src/hooks/useFetchProducts.ts
+
 import { useEffect, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import NetInfo from '@react-native-community/netinfo'
@@ -27,7 +27,7 @@ const useFetchProducts = () => {
 
         await AsyncStorage.setItem('products', JSON.stringify(result));
       } else {
-        // If offline, retrieve data from AsyncStorage
+        
         const cachedData = await AsyncStorage.getItem('products');
         if (cachedData) {
           setData(JSON.parse(cachedData));

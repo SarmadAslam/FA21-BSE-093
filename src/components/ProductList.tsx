@@ -44,14 +44,14 @@ const ProductList: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      {/* Category Sidebar */}
+
       <CategorySidebar
         categories={uniqueCategories}
         selectedCategory={selectedCategory}
         onSelectCategory={setSelectedCategory}
       />
 
-      {/* Product List with Two Columns */}
+    
       <FlatList
         data={filteredProducts}
         keyExtractor={(item) => item.id.toString()}

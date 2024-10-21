@@ -1,4 +1,4 @@
-// src/components/CategorySidebar.tsx
+
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -49,14 +49,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f8f8',
     borderRadius: 20,
     marginRight: 10,
-    elevation: 3, // Shadow for Android
-    shadowColor: '#000', // Shadow for iOS
+    elevation: 3, 
+    shadowColor: '#000', 
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 5,
   },
   selectedCategory: {
-    backgroundColor: '#ff6347', // Accent color
+    backgroundColor: '#ff6347',
   },
   categoryText: {
     color: '#333',
